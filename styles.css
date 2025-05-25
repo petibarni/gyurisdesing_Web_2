@@ -1,0 +1,156 @@
+/* Általános stílusok */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.highlight {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+/* Hero rész */
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    margin-bottom: 30px;
+    background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('bg-pattern.jpg');
+    background-size: cover;
+}
+
+/* Termékkártyák */
+.product-card {
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.product-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Lábléc */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.footer a {
+    color: #d4af37;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #f8d96c;
+    text-decoration: underline;
+}
+
+/* Kapcsolat űrlap */
+.form-control, .form-select {
+    padding: 10px 15px;
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+.btn-primary {
+    background-color: #d4af37;
+    border-color: #d4af37;
+    padding: 10px 25px;
+    border-radius: 0;
+}
+
+.btn-primary:hover {
+    background-color: #c2a030;
+    border-color: #c2a030;
+}
+
+/* Reszponzív beállítások */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 50px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .product-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Termék részletező oldal stílusai */
+.main-product-image {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.main-product-image:hover {
+    transform: scale(1.02);
+}
+
+.thumbnail {
+    border: 1px solid #ddd;
+    padding: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.thumbnail:hover {
+    border-color: #d4af37;
+    transform: scale(1.05);
+}
+
+.product-details h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.product-details .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.product-details ul {
+    padding-left: 20px;
+}
+
+.product-details ul li {
+    margin-bottom: 8px;
+}
+
+footer.footer {
+    background-color: #2c2f36;
+    color: white;
+    width: 100%;
+    padding: 40px 0;
+  }
+  
+  footer.footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  footer.footer a:hover {
+    text-decoration: underline;
+  }
+  
